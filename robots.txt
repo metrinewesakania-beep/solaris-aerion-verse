@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://metrinewesakania-beep.github.io/solaris-aerion-verse/sitemap.xml
