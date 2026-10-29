@@ -2,251 +2,28 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#07060d">
-<meta name="description" content="Solaris, the Living Sun: an original superhero of the Aerion Verse. A 20-year-old stellar-physics researcher who fused with living solar plasma, in white and silver armor with a golden solar emblem.">
-<meta property="og:title" content="Solaris: The Living Sun | Aerion Verse">
-<meta property="og:description" content="The official website of Solaris, an original superhero of the Aerion Verse.">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#080611">
+<meta name="description" content="Discover Solaris, the Living Sun, and the extraordinary cosmic world of the Aerion Verse. Explore powers, transformations, characters and chronicles.">
 <meta property="og:type" content="website">
+<meta property="og:title" content="SOLARIS | The Living Sun">
+<meta property="og:description" content="Power beyond power. Speed beyond speed. Enter the Aerion Verse.">
 <meta property="og:image" content="https://metrinewesakania-beep.github.io/solaris-aerion-verse/solaris.jpg">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"CreativeWork","name":"Solaris: The Living Sun","description":"Official website of Solaris, an original superhero of the Aerion Verse.","about":{"@type":"Thing","name":"Solaris","description":"The Living Sun. A stellar-physics researcher who fused with living solar plasma."},"isPartOf":{"@type":"CreativeWorkSeries","name":"Aerion Verse"}}</script>
-<title>Solaris: The Living Sun | Aerion Verse</title>
+<meta property="og:url" content="https://metrinewesakania-beep.github.io/solaris-aerion-verse/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://metrinewesakania-beep.github.io/solaris-aerion-verse/">
+<!-- Paste your actual Google Search Console verification tag here. -->
+<title>SOLARIS — The Living Sun | Aerion Verse</title>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"SOLARIS — The Living Sun | Aerion Verse","url":"https://metrinewesakania-beep.github.io/solaris-aerion-verse/","description":"An original cosmic superhero universe featuring Solaris, the Living Sun."}</script>
 <style>
-:root{--bg:#07060d;--panel:#12101f;--panel2:#1a1730;--text:#fbf6e8;--muted:#b9b2cc;--gold:#ffc94d;--gold2:#ff9a1f;--line:#34304d;--silver:#dfe6f2}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:70px}
-body{margin:0;color:var(--text);font:400 1rem/1.65 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
- background:var(--bg) radial-gradient(1.5px 1.5px at 12% 18%,#fff8,transparent),radial-gradient(1px 1px at 72% 30%,#fff9,transparent),radial-gradient(1.5px 1.5px at 40% 70%,#fff7,transparent),radial-gradient(1px 1px at 88% 82%,#fff8,transparent),radial-gradient(1px 1px at 25% 90%,#fff6,transparent);background-attachment:fixed}
-a{color:inherit}
+:root{--bg:#080611;--panel:#171126;--gold:#ffd36a;--orange:#ff812e;--white:#fff9ed;--muted:#bdb5d0;--line:#403250;--blue:#bfc7ff}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth;scroll-padding-top:85px}
+body{margin:0;background:radial-gradient(ellipse at 50% 0%,#452351,transparent 48%),var(--bg);color:var(--white);font:16px/1.7 system-ui,sans-serif;overflow-x:hidden}
+a{color:var(--gold)}
 button,input{font:inherit}
-:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
-.skip{position:absolute;left:-999px;top:8px;background:var(--gold);color:#1a1000;padding:10px 14px;border-radius:8px;z-index:50}
-.skip:focus{left:8px}
-.wrap{width:min(1100px,92%);margin:auto}
-h1,h2,h3{margin:0;line-height:1.1;font-family:Georgia,"Times New Roman",serif}
-header{position:sticky;top:0;z-index:20;background:#07060dcc;backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.bar{display:flex;align-items:center;gap:14px;padding:10px 0}
-.logo{font:700 1.15rem Georgia,serif;text-decoration:none;color:var(--gold);white-space:nowrap;letter-spacing:.04em}
-nav{display:flex;gap:2px;overflow-x:auto}
-nav a{padding:9px 12px;border-radius:999px;text-decoration:none;color:var(--muted);font-size:.92rem;white-space:nowrap}
-nav a:hover{background:var(--panel2);color:var(--text)}
-
-/* hero */
-.hero{text-align:center;padding:48px 0 30px;overflow:hidden}
-.sun{width:min(300px,68vw);height:auto;display:block;margin:0 auto 8px;filter:drop-shadow(0 0 40px #ff9a1f99)}
-.rays{transform-origin:150px 150px;animation:spin 60s linear infinite}
-.core{animation:pulse 4s ease-in-out infinite;transform-origin:150px 150px}
-@keyframes spin{to{transform:rotate(360deg)}}
-@keyframes pulse{50%{transform:scale(1.05)}}
-h1{font-size:clamp(3rem,13vw,6.6rem);letter-spacing:.12em;background:linear-gradient(180deg,#fff3c4,var(--gold) 55%,var(--gold2));-webkit-background-clip:text;background-clip:text;color:transparent}
-.tag{font-size:clamp(1rem,3.5vw,1.4rem);letter-spacing:.35em;color:var(--silver);margin:10px 0 0}
-.verse{color:var(--muted);margin:8px 0 22px}
-.btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
-.btn{display:inline-flex;align-items:center;min-height:46px;padding:11px 20px;border-radius:999px;border:1px solid var(--gold);background:var(--gold);color:#1a1000;font-weight:700;text-decoration:none;cursor:pointer}
-.btn.ghost{background:transparent;color:var(--gold)}
-.btn:hover{filter:brightness(1.1)}
-
-/* tools */
-.tools{display:flex;flex-wrap:wrap;gap:12px;align-items:center;padding:16px;background:var(--panel);border:1px solid var(--line);border-radius:18px;margin:6px 0 0}
-.tools input{flex:1 1 220px;min-height:46px;padding:10px 14px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--text)}
-.chips{display:flex;gap:8px;flex-wrap:wrap}
-.chip{min-height:44px;padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:var(--panel2);color:var(--text);cursor:pointer}
-.chip[aria-pressed="true"]{background:var(--gold);color:#1a1000;border-color:var(--gold);font-weight:700}
-.note{color:var(--muted);font-size:.92rem;margin:10px 2px}
-.empty{padding:22px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:14px}
-
-section{padding:50px 0 6px}
-h2{font-size:clamp(1.8rem,5vw,2.7rem);color:var(--gold);margin-bottom:8px}
-.sub{color:var(--muted);max-width:62ch;margin:0 0 18px}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,250px),1fr));gap:14px}
-.card{background:linear-gradient(160deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:18px;padding:18px;min-width:0}
-.card h3{font-size:1.2rem;margin:8px 0 6px}
-.card p{margin:0;color:var(--muted);font-size:.95rem}
-.badge{display:inline-block;font-size:.76rem;font-weight:700;padding:3px 9px;border-radius:999px;border:1px solid var(--gold);color:var(--gold)}
-.badge.p{border-style:dashed;border-color:#9aa4ff;color:#b9c0ff}
-.card[data-s="proposal"]{border-style:dashed;border-color:#6a72c8}
-.facts{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,230px),1fr));gap:12px}
-.fact{padding:14px 16px;border-left:3px solid var(--gold);background:var(--panel);border-radius:0 12px 12px 0}
-.fact b{display:block;color:var(--muted);font-size:.8rem;font-weight:600}
-.orb{width:64px;height:64px;border-radius:50%;margin:2px 0 6px;background:radial-gradient(circle,#fff 0,#ffe08a 25%,var(--gold2) 60%,transparent 72%);transform:scale(var(--s));transform-origin:left center;box-shadow:0 0 calc(var(--s)*40px) #ff9a1f88}
-.stage{color:var(--muted);font-size:.8rem}
-.tl{list-style:none;margin:0;padding:0 0 0 18px;border-left:2px solid var(--line)}
-.tl li{position:relative;margin:0 0 14px;padding:14px 16px;background:var(--panel);border-radius:14px;border:1px solid var(--line)}
-.tl li::before{content:"";position:absolute;left:-26px;top:20px;width:12px;height:12px;border-radius:50%;background:var(--gold)}
-.tl li[data-s="proposal"]::before{background:#9aa4ff}
-.tl li[data-s="proposal"]{border-style:dashed}
-.portrait img{display:block;width:100%;height:auto;border-radius:18px;border:1px solid var(--line);box-shadow:0 0 44px #ff9a1f55}
-.portrait{margin:0 auto 26px;max-width:440px;text-align:center}.portrait svg{width:100%;height:auto;filter:drop-shadow(0 0 30px #ff9a1f66)}.portrait figcaption{color:var(--muted);font-size:.88rem;margin-top:6px}
-footer{margin-top:60px;border-top:1px solid var(--line);padding:30px 0 40px;text-align:center;color:var(--muted);font-size:.92rem}
-[hidden]{display:none!important}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rays,.core{animation:none}}
-</style>
-</head>
-<body>
-<a class="skip" href="#main">Skip to content</a>
-<header>
-  <div class="wrap bar">
-    <a class="logo" href="#top">AERION VERSE</a>
-    <nav aria-label="Main navigation">
-      <a href="#about">Solaris</a><a href="#powers">Powers</a><a href="#forms">Forms</a><a href="#verse">The Verse</a><a href="#timeline">Timeline</a><a href="#proposals">Proposals</a>
-    </nav>
-  </div>
-</header>
-
-<main id="main">
-<div class="hero" id="top">
-  <div class="wrap">
-    <svg class="sun" viewBox="0 0 300 300" role="img" aria-label="A golden sun emblem">
-      <defs>
-        <radialGradient id="g" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#fff"/><stop offset=".3" stop-color="#ffe08a"/><stop offset=".7" stop-color="#ff9a1f"/><stop offset="1" stop-color="#ff9a1f" stop-opacity="0"/></radialGradient>
-      </defs>
-      <g class="rays" stroke="#ffc94d" stroke-width="5" stroke-linecap="round">
-        <path d="M150 8v40M150 252v40M8 150h40M252 150h40M50 50l28 28M222 222l28 28M250 50l-28 28M78 222l-28 28" />
-        <path stroke-width="3" opacity=".7" d="M150 24v20M150 256v20M24 150h20M256 150h20M72 28l10 17M218 255l10 17M272 72l-17 10M45 218l17 10M228 28l-10 17M82 255l-10 17M272 228l-17-10M45 82l17-10"/>
-      </g>
-      <circle class="core" cx="150" cy="150" r="88" fill="url(#g)"/>
-      <circle cx="150" cy="150" r="38" fill="none" stroke="#fff" stroke-width="3" opacity=".8"/>
-    </svg>
-    <h1>SOLARIS</h1>
-    <p class="tag">THE LIVING SUN</p>
-    <p class="verse">An original hero of the Aerion Verse</p>
-    <div class="btns"><a class="btn" href="#forms">See the six forms</a><a class="btn ghost" href="#about">Meet Solaris</a></div>
-  </div>
-</div>
-
-<div class="wrap">
-  <div class="tools" role="search">
-    <input id="q" type="search" placeholder="Search powers, forms, profiles…" autocomplete="off" aria-label="Search the Aerion Verse">
-    <div class="chips" role="group" aria-label="Show">
-      <button class="chip" type="button" data-f="all" aria-pressed="true">All</button>
-      <button class="chip" type="button" data-f="canon" aria-pressed="false">Confirmed canon</button>
-      <button class="chip" type="button" data-f="proposal" aria-pressed="false">Proposals</button>
-    </div>
-  </div>
-  <p class="note"><span class="badge">Confirmed</span> is canon set by the creator. <span class="badge p">Proposal</span> is an idea that is not canon until the creator approves it.</p>
-  <div class="empty" id="empty" hidden>Nothing matches. Try another word or choose All.</div>
-
-  <section id="about">
-    <h2>Solaris</h2>
-    <p class="sub">The Living Sun. A stellar-physics researcher who fused with living solar plasma.</p>
-    <figure class="portrait">
-      <img src="solaris.jpg" width="900" height="1424" alt="Poster of Solaris, The Living Sun: a dark-haired young man with golden eyes in white and silver armor with gold trim, a cape and a glowing golden solar emblem. Text reads: Not just a hero. A star born." fetchpriority="high">
-      <figcaption>Solaris, poster artwork provided by the creator.</figcaption>
-    </figure>
-    <div class="facts">
-      <div class="fact" data-s="canon"><b>Name</b>Solaris</div>
-      <div class="fact" data-s="canon"><b>Age</b>20</div>
-      <div class="fact" data-s="canon"><b>Identity</b>The Living Sun</div>
-      <div class="fact" data-s="canon"><b>Universe</b>Aerion Verse</div>
-      <div class="fact" data-s="canon"><b>Origin concept</b>A stellar-physics researcher who fused with living solar plasma</div>
-      <div class="fact" data-s="canon"><b>Appearance</b>White and silver armor, a cape, and a golden solar emblem</div>
-    </div>
-  </section>
-
-  <section id="powers">
-    <h2>Powers and abilities</h2>
-    <p class="sub">Solaris is already a cosmic powerhouse in his normal state, before any transformation.</p>
-    <div class="grid" id="powerGrid"></div>
-  </section>
-
-  <section id="forms">
-    <h2>Transformations</h2>
-    <p class="sub">Six stages of his solar nature. Each form’s abilities and look will be added only when the creator defines them.</p>
-    <div class="grid" id="formGrid"></div>
-  </section>
-
-  <section id="verse">
-    <h2>The Aerion Verse</h2>
-    <p class="sub">Names preserved from the creator’s universe. Roles, origins and histories are not defined yet.</p>
-    <div class="grid" id="verseGrid"></div>
-  </section>
-
-  <section id="timeline">
-    <h2>Timeline and chapters</h2>
-    <p class="sub">Only confirmed events appear as canon. Chapter slots are open for the creator’s own stories.</p>
-    <ol class="tl" id="tlList"></ol>
-  </section>
-
-  <section id="proposals">
-    <h2>Proposals board</h2>
-    <p class="sub">Ideas for the site that need the creator’s decision. None of these are canon.</p>
-    <div class="grid" id="propGrid"></div>
-  </section>
-</div>
-</main>
-
-<footer>
-  <div class="wrap">
-    <p><strong>Solaris</strong> and the <strong>Aerion Verse</strong> are original creations. All visuals on this site are original.</p>
-    <p><a href="#top">Back to top</a></p>
-  </div>
-</footer>
-
-<script>
-"use strict";
-var POWERS=[
-["Normal-state power","Extraordinarily powerful even without transforming. Creator’s power benchmark: comparable to three Supermen fused together."],
-["Transcendent speed","Insane speed, even in his normal state."],
-["Power beyond limits","Power beyond conventional power and speed limits."],
-["Time control","Can freeze and manipulate time."],
-["Solar plasma manipulation",""],["Flight",""],["Extraordinary strength",""],["Durability",""],["Regeneration",""],["Heat projection",""],["Energy perception",""]];
-var FORMS=[
-["Normal Solaris","Already immensely powerful. White and silver armor, a cape and a golden solar emblem.",.45],
-["Solar Avatar","",.55],["Stellar Form","",.67],["Solar Core","",.79],["Sun Core","",.9],
-["THE SUN","His ultimate form.",1.05]];
-var VERSE=["Solaris","Aerion","Emōnz","End Power","The Sun Race"];
-var TL=[["canon","Origin","A stellar-physics researcher fuses with living solar plasma and becomes Solaris. The date is not set yet."],
-["canon","Now","Solaris is 20 years old."],
-["proposal","Chapter 1","Title to be decided by the creator."],
-["proposal","Chapter 2","Title to be decided by the creator."],
-["proposal","Chapter 3","Title to be decided by the creator."]];
-var PROPS=[
-["Transformation details","Add the abilities and appearance of each form once you define them."],
-["Profiles for the Verse","Add a profile page for Aerion, Emōnz, End Power and The Sun Race once you decide what they are."],
-["Chapter titles and summaries","Fill the open chapter slots with your own stories."]];
-
-function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x)e.textContent=x;return e}
-function badge(p){return el("span","badge"+(p?" p":""),p?"Proposal":"Confirmed")}
-function card(g,s,title,body,extra){
-  var c=el("article","card");c.dataset.s=s;
-  if(extra)c.appendChild(extra);
-  c.appendChild(badge(s==="proposal"));
-  c.appendChild(el("h3","",title));
-  c.appendChild(el("p","",body));
-  document.getElementById(g).appendChild(c);
-}
-POWERS.forEach(function(p){card("powerGrid","canon",p[0],p[1]||"Confirmed ability.")});
-FORMS.forEach(function(f,i){
-  var wrap=el("div");var o=el("div","orb");o.style.setProperty("--s",f[2]);o.setAttribute("aria-hidden","true");
-  wrap.appendChild(o);wrap.appendChild(el("span","stage","Stage "+(i+1)+" of 6"));
-  card("formGrid","canon",f[0],(f[1]?f[1]+" ":"")+(i>0?"Details not yet defined by the creator.":""),wrap);
-});
-VERSE.forEach(function(n){card("verseGrid","canon",n,"Name confirmed. Details not yet defined by the creator.")});
-TL.forEach(function(t){
-  var li=el("li");li.dataset.s=t[0];li.appendChild(badge(t[0]==="proposal"));
-  li.appendChild(el("h3","",t[1]));li.appendChild(el("p","",t[2]));
-  document.getElementById("tlList").appendChild(li);
-});
-PROPS.forEach(function(p){card("propGrid","proposal",p[0],p[1])});
-
-var filter="all",query="";
-function apply(){
-  var shown=0;
-  document.querySelectorAll("[data-s]").forEach(function(e){
-    var ok=(filter==="all"||e.dataset.s===filter)&&(!query||e.textContent.toLowerCase().indexOf(query)>-1);
-    e.hidden=!ok;if(ok)shown++;
-  });
-  document.getElementById("empty").hidden=shown>0;
-}
-document.getElementById("q").addEventListener("input",function(e){query=e.target.value.trim().toLowerCase();apply()});
-document.querySelectorAll(".chip").forEach(function(b){
-  b.addEventListener("click",function(){
-    filter=b.dataset.f;
-    document.querySelectorAll(".chip").forEach(function(x){x.setAttribute("aria-pressed",String(x===b))});
-    apply();
-  });
-});
-apply();
-</script>
-</body>
-  </html>
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+#stars{position:fixed;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none}
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--gold),var(--orange));z-index:20;box-shadow:0 0 12px var(--orange)}
+.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:#080611ed;backdrop-filter:blur(15px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0)}
