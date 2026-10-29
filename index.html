@@ -2,28 +2,737 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#080611">
-<meta name="description" content="Discover Solaris, the Living Sun, and the extraordinary cosmic world of the Aerion Verse. Explore powers, transformations, characters and chronicles.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="SOLARIS | The Living Sun">
-<meta property="og:description" content="Power beyond power. Speed beyond speed. Enter the Aerion Verse.">
-<meta property="og:image" content="https://metrinewesakania-beep.github.io/solaris-aerion-verse/solaris.jpg">
-<meta property="og:url" content="https://metrinewesakania-beep.github.io/solaris-aerion-verse/">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="canonical" href="https://metrinewesakania-beep.github.io/solaris-aerion-verse/">
-<!-- Paste your actual Google Search Console verification tag here. -->
+
 <title>SOLARIS — The Living Sun | Aerion Verse</title>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"SOLARIS — The Living Sun | Aerion Verse","url":"https://metrinewesakania-beep.github.io/solaris-aerion-verse/","description":"An original cosmic superhero universe featuring Solaris, the Living Sun."}</script>
+
+<meta name="description"
+content="Enter the Aerion Verse, the cosmic universe of Solaris, the Living Sun. Discover his powers, transformations, legends, and extraordinary speed.">
+
+<link rel="canonical"
+href="https://metrinewesakania-beep.github.io/solaris-aerion-verse/">
+
+<meta property="og:title" content="SOLARIS — The Living Sun">
+<meta property="og:description"
+content="Power beyond power. Speed beyond speed. Enter the Aerion Verse.">
+<meta property="og:type" content="website">
+
 <style>
-:root{--bg:#080611;--panel:#171126;--gold:#ffd36a;--orange:#ff812e;--white:#fff9ed;--muted:#bdb5d0;--line:#403250;--blue:#bfc7ff}
-*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
-html{scroll-behavior:smooth;scroll-padding-top:85px}
-body{margin:0;background:radial-gradient(ellipse at 50% 0%,#452351,transparent 48%),var(--bg);color:var(--white);font:16px/1.7 system-ui,sans-serif;overflow-x:hidden}
-a{color:var(--gold)}
-button,input{font:inherit}
-:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
-#stars{position:fixed;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none}
-#progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--gold),var(--orange));z-index:20;box-shadow:0 0 12px var(--orange)}
-.wrap{width:min(1120px,92%);margin:auto}
-header{position:sticky;top:0;z-index:10;background:#080611ed;backdrop-filter:blur(15px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0)}
+:root {
+  --bg: #080611;
+  --panel: #151023;
+  --gold: #ffd76a;
+  --orange: #ff782e;
+  --white: #fff9ed;
+  --muted: #c3bad5;
+  --line: #40314f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 85px;
+}
+
+body {
+  margin: 0;
+  color: var(--white);
+  background:
+    radial-gradient(ellipse at 50% 0%, #442050 0%, transparent 45%),
+    var(--bg);
+  font-family: system-ui, Arial, sans-serif;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--gold);
+}
+
+button {
+  font: inherit;
+}
+
+#stars {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+#progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0;
+  background: linear-gradient(90deg, var(--gold), var(--orange));
+  z-index: 100;
+}
+
+.wrap {
+  width: min(1100px, 91%);
+  margin: auto;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(8, 6, 17, .94);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--line);
+}
+
+nav {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  padding: 12px 0;
+}
+
+.logo {
+  color: var(--gold);
+  font-weight: 950;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: 1.15rem;
+}
+
+.navlinks {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.navlinks a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: .9rem;
+}
+
+.navlinks a:hover {
+  color: var(--gold);
+}
+
+section {
+  padding: 75px 0;
+}
+
+.hero {
+  min-height: 82vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 65px 0;
+}
+
+.eyebrow {
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: .8rem;
+  font-weight: 800;
+}
+
+h1 {
+  font-size: clamp(3rem, 12vw, 7.5rem);
+  line-height: .98;
+  margin: 18px 0;
+  letter-spacing: -3px;
+  font-weight: 1000;
+  background: linear-gradient(
+    180deg,
+    #fffdf3 10%,
+    #ffd76a 48%,
+    #ff782e 95%
+  );
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  filter: drop-shadow(0 0 25px #ff782e35);
+}
+
+.subtitle {
+  font-size: clamp(1.1rem, 3vw, 1.6rem);
+  color: var(--muted);
+  max-width: 700px;
+  margin: 0 auto 25px;
+}
+
+.sun-stage {
+  height: 230px;
+  display: grid;
+  place-items: center;
+  margin: 20px auto;
+}
+
+.sun {
+  width: 145px;
+  height: 145px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 35% 30%,
+    #fffde8 0%,
+    #ffe993 18%,
+    #ffad36 48%,
+    #f34b23 78%,
+    #81204e 100%
+  );
+  box-shadow:
+    0 0 30px #ffb13b,
+    0 0 75px #ff782e88,
+    0 0 140px #ff4c3c44;
+  animation: sunPulse 4s ease-in-out infinite;
+  position: relative;
+}
+
+.sun::before,
+.sun::after {
+  content: "";
+  position: absolute;
+  inset: -20px;
+  border: 1px solid #ffd76a66;
+  border-radius: 50%;
+  animation: orbit 12s linear infinite;
+}
+
+.sun::after {
+  inset: -38px;
+  border-color: #ff782e55;
+  animation-duration: 18s;
+  animation-direction: reverse;
+}
+
+@keyframes sunPulse {
+  0%, 100% {
+    transform: scale(1);
+    filter: brightness(1);
+  }
+  50% {
+    transform: scale(1.07);
+    filter: brightness(1.2);
+  }
+}
+
+@keyframes orbit {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+.btn {
+  display: inline-block;
+  border: 1px solid var(--gold);
+  border-radius: 999px;
+  padding: 12px 22px;
+  color: var(--gold);
+  background: transparent;
+  text-decoration: none;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform .2s, background .2s;
+}
+
+.btn.primary {
+  background: linear-gradient(110deg, #ffcc59, #ff782e);
+  color: #1a0c12;
+  border: none;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  background-color: #ffd76a18;
+}
+
+.btn.primary:hover {
+  background: linear-gradient(110deg, #fff0a5, #ff9b42);
+}
+
+.section-title {
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  line-height: 1.1;
+  margin: 10px 0 15px;
+}
+
+.section-intro {
+  color: var(--muted);
+  max-width: 720px;
+  margin-bottom: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.card {
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: linear-gradient(145deg, #1b142aee, #0e0b18ee);
+  box-shadow: 0 15px 35px #00000018;
+  transition: transform .2s, border-color .2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #b58b50;
+}
+
+.card h3 {
+  margin-top: 0;
+  color: var(--gold);
+  font-size: 1.25rem;
+}
+
+.card p {
+  color: var(--muted);
+  margin-bottom: 0;
+}
+
+.symbol {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.feature {
+  border-left: 3px solid var(--orange);
+  padding: 8px 0 8px 20px;
+  margin: 18px 0;
+}
+
+.feature h3 {
+  margin: 0;
+  color: var(--gold);
+}
+
+.feature p {
+  color: var(--muted);
+  margin: 5px 0;
+}
+
+.quote {
+  border: 1px solid #71532e;
+  border-radius: 20px;
+  padding: 35px 25px;
+  text-align: center;
+  background: radial-gradient(ellipse at center, #4a241d66, transparent 75%);
+}
+
+.quote p {
+  font-size: clamp(1.4rem, 4vw, 2.4rem);
+  font-weight: 900;
+  color: var(--gold);
+  line-height: 1.3;
+}
+
+footer {
+  border-top: 1px solid var(--line);
+  padding: 30px 0;
+  text-align: center;
+  color: var(--muted);
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+.small {
+  font-size: .85rem;
+}
+
+#topButton {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 30;
+  display: none;
+  background: var(--gold);
+  color: #150b12;
+  border: 0;
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+  font-size: 1.3rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+@media (max-width: 760px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  nav {
+    justify-content: center;
+  }
+
+  .navlinks {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .navlinks a {
+    font-size: .82rem;
+  }
+
+  section {
+    padding: 55px 0;
+  }
+
+  .hero {
+    min-height: auto;
+  }
+
+  h1 {
+    letter-spacing: -1px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+  }
+}
+</style>
+</head>
+
+<body>
+<canvas id="stars" aria-hidden="true"></canvas>
+<div id="progress"></div>
+
+<header>
+  <nav class="wrap">
+    <a class="logo" href="#home">SOLARIS</a>
+
+    <div class="navlinks">
+      <a href="#story">Story</a>
+      <a href="#powers">Powers</a>
+      <a href="#forms">Forms</a>
+      <a href="#verse">Aerion Verse</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="wrap">
+      <div class="eyebrow">An Original Cosmic Superhero Universe</div>
+
+      <div class="sun-stage" aria-label="Animated glowing sun">
+        <div class="sun"></div>
+      </div>
+
+      <h1>SOLARIS</h1>
+
+      <p class="subtitle">
+        THE LIVING SUN
+        <br>
+        A force of cosmic power. A being beyond ordinary limits.
+      </p>
+
+      <p class="section-intro" style="margin-left:auto;margin-right:auto">
+        Enter a universe where stellar energy, extraordinary speed,
+        and limitless imagination meet.
+      </p>
+
+      <div class="buttons">
+        <a class="btn primary" href="#story">Discover Solaris</a>
+        <a class="btn" href="#powers">Explore His Powers</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="story">
+    <div class="wrap">
+      <div class="eyebrow">The Legend Begins</div>
+      <h2 class="section-title">The Living Sun</h2>
+
+      <p class="section-intro">
+        Solaris is an original hero of the Aerion Verse, a cosmic
+        powerhouse whose defining nature is extraordinary speed,
+        immense solar energy, and the ability to rise beyond his
+        previous limits.
+      </p>
+
+      <div class="grid">
+        <article class="card">
+          <div class="symbol">☀</div>
+          <h3>The Sun Race</h3>
+          <p>
+            Solaris belongs to the legendary Sun Race, a people
+            associated with the power of stars and the energy of light.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="symbol">⚡</div>
+          <h3>Beyond Limits</h3>
+          <p>
+            His normal state is already extraordinarily powerful.
+            His greatest challenge is learning to control the
+            full scale of his abilities.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="symbol">✦</div>
+          <h3>The Aerion Verse</h3>
+          <p>
+            Solaris's adventures unfold across a vast fictional
+            universe of cosmic mysteries, powerful rivals, and
+            legendary transformations.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="powers">
+    <div class="wrap">
+      <div class="eyebrow">Abilities and Potential</div>
+      <h2 class="section-title">Powers Beyond Power</h2>
+
+      <p class="section-intro">
+        These are the core abilities featured in this website's
+        presentation of Solaris. Their precise limits and rules
+        can be expanded as you develop the official story.
+      </p>
+
+      <div class="grid">
+        <article class="card">
+          <div class="symbol">⚡</div>
+          <h3>Transcendent Speed</h3>
+          <p>
+            Extraordinary movement and reactions, allowing Solaris
+            to operate at speeds far beyond ordinary beings.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="symbol">☄</div>
+          <h3>Solar Energy</h3>
+          <p>
+            The ability to channel immense stellar power into
+            controlled bursts of radiant energy.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="symbol">◈</div>
+          <h3>Cosmic Durability</h3>
+          <p>
+            Exceptional resistance to powerful forces, helping
+            Solaris withstand challenges on a cosmic scale.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="symbol">✧</div>
+          <h3>Solar Flight</h3>
+          <p>
+            Travel through the skies and across vast distances
+            using his extraordinary abilities.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="symbol">🔥</div>
+          <h3>Power Evolution</h3>
+          <p>
+            Solaris can explore new levels of power as he
+            confronts greater challenges and masters his energy.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="symbol">◎</div>
+          <h3>Energy Control</h3>
+          <p>
+            The potential to focus and shape solar energy
+            instead of releasing it without control.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="forms">
+    <div class="wrap">
+      <div class="eyebrow">Evolution of the Living Sun</div>
+      <h2 class="section-title">Transformations</h2>
+
+      <p class="section-intro">
+        The following progression is a presentation framework for
+        Solaris. Treat the stages beyond your established canon as
+        proposed forms that you can rename or change.
+      </p>
+
+      <div class="feature">
+        <h3>01 — Solaris: Normal State</h3>
+        <p>
+          His baseline form is already immensely powerful,
+          with extraordinary speed and control of solar energy.
+        </p>
+      </div>
+
+      <div class="feature">
+        <h3>02 — Solar Spark</h3>
+        <p>
+          A heightened state where radiant energy becomes more
+          visible and his abilities intensify.
+        </p>
+      </div>
+
+      <div class="feature">
+        <h3>03 — THE SUN</h3>
+        <p>
+          A proposed ultimate transformation representing the
+          full expression of Solaris's solar nature.
+        </p>
+      </div>
+
+      <div class="quote">
+        <div class="eyebrow">The Solaris Philosophy</div>
+        <p>
+          “Power is not merely what you possess.
+          It is what you learn to master.”
+        </p>
+        <span class="small">
+          An original line written for this website.
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <section id="verse">
+    <div class="wrap">
+      <div class="eyebrow">Beyond One Hero</div>
+      <h2 class="section-title">Welcome to the Aerion Verse</h2>
+
+      <p class="section-intro">
+        Solaris is one part of a larger fictional universe.
+        The Aerion Verse can grow into a connected collection of
+        heroes, civilizations, rivalries, cosmic events, and stories.
+      </p>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Cosmic Chronicles</h3>
+          <p>
+            Discover the events that shape the universe and the
+            mysteries behind its oldest legends.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Allies and Rivals</h3>
+          <p>
+            Introduce characters whose choices challenge Solaris
+            and reveal different sides of his character.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Future Stories</h3>
+          <p>
+            Expand the universe with new worlds, major battles,
+            unexpected discoveries, and original adventures.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="quote">
+        <div class="eyebrow">The Journey Continues</div>
+        <h2 class="section-title">The Sun Never Stands Still</h2>
+        <p>
+          Every new world brings a new challenge.
+          Every challenge creates another legend.
+        </p>
+        <a href="#home" class="btn primary">Return to the Beginning</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>SOLARIS — THE LIVING SUN</strong></p>
+    <p>A fan-independent, original superhero universe concept.</p>
+    <p class="small">
+      © <span id="year"></span> Aerion Verse.
+      Original project presentation.
+    </p>
+  </div>
+</footer>
+
+<button id="topButton" aria-label="Back to top">↑</button>
+
+<script>
+/* Animated star field */
+(function () {
+  const canvas = document.getElementById("stars");
+  const ctx = canvas.getContext("2d");
+
+  if (!ctx) return;
+
+  let width = 0;
+  let height = 0;
+  let stars = [];
+
+  const reduceMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)"
+  ).matches;
+
+  function resize() {
+    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+
+    width = window.innerWidth;
+    height = window.innerHeight;
+
+    canvas.width = width * dpr;
+    canvas.height = height * dpr;
+    canvas.style.width = width + "px";
+    canvas.style.height = height + "px";
+
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+    const count = Math.min(
+      140,
+      Math.floor((width * height) / 8000)
+    );
+
+    stars = Array.from({ length: count }, () => ({
+      x: Math.random() * width,
+      y: Math.random() * height,
+      r: Math.random() * 1.5 + 0.3,
+      a: Math.random() * 0.7 + 0.2,
+      speed: Math.random() * 0.25
